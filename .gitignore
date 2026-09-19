@@ -1,0 +1,6 @@
+# Cloudflare Wrangler local state / build artifacts
+.wrangler/
+
+# Node
+node_modules/
+npm-debug.log*

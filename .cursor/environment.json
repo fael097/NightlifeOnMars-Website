@@ -1,0 +1,14 @@
+{
+  "name": "Nightlife on Mars Website",
+  "install": "npx --yes wrangler@4.135.0 --version",
+  "terminals": [
+    {
+      "name": "wrangler dev",
+      "command": "npx --yes wrangler@4.135.0 dev --ip 0.0.0.0 --port 8787 --persist-to /tmp/wrangler-state",
+      "description": "Local Cloudflare (Workers assets) dev server for the static site. Serves index.html and assets at http://localhost:8787. State is persisted outside the repo to avoid a file-watch reload loop."
+    }
+  ],
+  "ports": [
+    { "name": "wrangler dev", "port": 8787 }
+  ]
+}
